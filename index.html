@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breakout Game - Play Now!</title>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script type="module" src="https://pyscript.net/latest/pyscript.js"></script>
-    <style>
-        body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: Arial; color: white; }
-        h1 { text-align: center; color: #fff; }
-        canvas { border: 2px solid #333; border-radius: 10px; box-shadow: 0 0 20px rgba(255,255,255,0.5); }
-    </style>
-    <py-config>
-        packages = ["pygame-ce"]
-    </py-config>
+  <meta charset="utf-8">
+  <title>Breakout – Play in Browser!</title>
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <style>
+    body {background:#000; margin:0; display:flex; justify-content:center; align-items:center; min-height:100vh; flex-direction:column; color:white; font-family:Arial;}
+    h1 {margin:20px; color:#0ff;}
+  </style>
+  <py-config>
+    packages = ["pygame-ce"]
+  </py-config>
 </head>
 <body>
-    <div>
-        <h1>🧱 Breakout Game</h1>
-        <div style="text-align: center; margin-bottom: 10px;">
-            ← → Move Paddle | Destroy All Bricks | 3 Lives | R to Restart
-        </div>
-        <script type="py-game" src="breakout.py"></script>
-    </div>
+  <h1>Breakout Game</h1>
+  <p>Use ← → arrows | Press R to restart</p>
+  <py-script src="breakout.py" type="py-game"></py-script>
 </body>
 </html>
